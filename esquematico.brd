@@ -692,6 +692,48 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 </package3d>
 </packages3d>
 </library>
+<library name="DRV8833">
+<packages>
+<package name="DRV8833">
+<wire x1="-13.97" y1="13.97" x2="-13.97" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-6.35" x2="6.35" y2="13.97" width="0.127" layer="21"/>
+<wire x1="-14.22" y1="14.22" x2="-14.22" y2="-6.6" width="0.05" layer="39"/>
+<wire x1="-14.22" y1="-6.6" x2="6.6" y2="-6.6" width="0.05" layer="39"/>
+<wire x1="6.6" y1="-6.6" x2="6.6" y2="14.22" width="0.05" layer="39"/>
+<wire x1="6.6" y1="14.22" x2="-14.22" y2="14.22" width="0.05" layer="39"/>
+<circle x="-11.43" y="14.5382" radius="0.1" width="0.2" layer="21"/>
+<circle x="-11.43" y="14.5382" radius="0.1" width="0.2" layer="51"/>
+<text x="-12.5182" y="14.7882" size="1.27" layer="25">&gt;NAME</text>
+<text x="-12.5182" y="-7.1682" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<wire x1="-13.97" y1="13.97" x2="-13.97" y2="-6.35" width="0.127" layer="51"/>
+<wire x1="-13.97" y1="-6.35" x2="6.35" y2="-6.35" width="0.127" layer="51"/>
+<wire x1="6.35" y1="-6.35" x2="6.35" y2="13.97" width="0.127" layer="51"/>
+<wire x1="6.35" y1="13.97" x2="-13.97" y2="13.97" width="0.127" layer="51"/>
+<wire x1="-10.31" y1="-6.35" x2="2.69" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="-10.31" y1="13.97" x2="2.69" y2="13.97" width="0.127" layer="21"/>
+<wire x1="-12.7" y1="13.97" x2="-13.97" y2="13.97" width="0.127" layer="21"/>
+<wire x1="5.08" y1="13.97" x2="6.35" y2="13.97" width="0.127" layer="21"/>
+<wire x1="-12.7" y1="-6.35" x2="-13.97" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-6.35" x2="6.35" y2="-6.35" width="0.127" layer="21"/>
+<pad name="8" x="-11.43" y="-5.08" drill="1.32" rot="R90"/>
+<pad name="7" x="-11.43" y="-2.54" drill="1.32" rot="R90"/>
+<pad name="6" x="-11.43" y="0" drill="1.32" rot="R90"/>
+<pad name="5" x="-11.43" y="2.54" drill="1.32" rot="R90"/>
+<pad name="4" x="-11.43" y="5.08" drill="1.32" rot="R90"/>
+<pad name="3" x="-11.43" y="7.62" drill="1.32" rot="R90"/>
+<pad name="2" x="-11.43" y="10.16" drill="1.32" rot="R90"/>
+<pad name="1" x="-11.43" y="12.7" drill="1.32" rot="R90"/>
+<pad name="16" x="3.81" y="12.7" drill="1.32" rot="R270"/>
+<pad name="15" x="3.81" y="10.16" drill="1.32" rot="R270"/>
+<pad name="14" x="3.81" y="7.62" drill="1.32" rot="R270"/>
+<pad name="13" x="3.81" y="5.08" drill="1.32" rot="R270"/>
+<pad name="12" x="3.81" y="2.54" drill="1.32" rot="R270"/>
+<pad name="11" x="3.81" y="0" drill="1.32" rot="R270"/>
+<pad name="10" x="3.81" y="-2.54" drill="1.32" rot="R270"/>
+<pad name="9" x="3.81" y="-5.08" drill="1.32" rot="R270"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -920,6 +962,28 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="16" x="95.25" y="-21.59" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="71.12" y="30.734" size="1.778" layer="27" ratio="10"/>
 </element>
+<element name="X2" library="con-ptr500" library_urn="urn:adsk.eagle:library:181" package="AK300/2" package3d_urn="urn:adsk.eagle:package:9881/1" value="" x="-6.35" y="10.16" smashed="yes">
+<attribute name="MF" value="" x="-6.35" y="10.16" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-6.35" y="10.16" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-11.43" y="16.891" size="1.778" layer="25" ratio="10"/>
+<attribute name="OC_FARNELL" value="unknown" x="-6.35" y="10.16" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-6.35" y="10.16" size="1.778" layer="27" display="off"/>
+<attribute name="POPULARITY" value="16" x="-6.35" y="10.16" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-11.43" y="1.524" size="1.778" layer="27" ratio="10"/>
+</element>
+<element name="X3" library="con-ptr500" library_urn="urn:adsk.eagle:library:181" package="AK300/2" package3d_urn="urn:adsk.eagle:package:9881/1" value="" x="-17.78" y="10.16" smashed="yes">
+<attribute name="MF" value="" x="-17.78" y="10.16" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-17.78" y="10.16" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-22.86" y="16.891" size="1.778" layer="25" ratio="10"/>
+<attribute name="OC_FARNELL" value="unknown" x="-17.78" y="10.16" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-17.78" y="10.16" size="1.778" layer="27" display="off"/>
+<attribute name="POPULARITY" value="16" x="-17.78" y="10.16" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-22.86" y="1.524" size="1.778" layer="27" ratio="10"/>
+</element>
+<element name="U$2" library="DRV8833" package="DRV8833" value="DRV8833" x="170.18" y="24.13" smashed="yes">
+<attribute name="NAME" x="157.6618" y="38.9182" size="1.27" layer="25"/>
+<attribute name="VALUE" x="157.6618" y="16.9618" size="1.27" layer="27" align="top-left"/>
+</element>
 </elements>
 <signals>
 <signal name="+5V">
@@ -1032,37 +1096,51 @@ design rules under a new name.</description>
 </signal>
 <signal name="RST">
 <contactref element="DISPLAY" pad="1"/>
-<contactref element="U$1" pad="P$13"/>
-<wire x1="38.1" y1="31.75" x2="93.98" y2="106.68" width="0" layer="19" extent="1-1"/>
+<contactref element="U$1" pad="P$16"/>
+<wire x1="38.1" y1="24.13" x2="93.98" y2="106.68" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CE">
 <contactref element="DISPLAY" pad="2"/>
-<contactref element="U$1" pad="P$14"/>
-<wire x1="38.1" y1="29.21" x2="96.52" y2="106.68" width="0" layer="19" extent="1-1"/>
+<contactref element="U$1" pad="P$15"/>
+<wire x1="38.1" y1="26.67" x2="96.52" y2="106.68" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DC">
 <contactref element="DISPLAY" pad="3"/>
-<contactref element="U$1" pad="P$15"/>
-<wire x1="38.1" y1="26.67" x2="99.06" y2="106.68" width="0" layer="19" extent="1-1"/>
+<contactref element="U$1" pad="P$14"/>
+<wire x1="38.1" y1="29.21" x2="99.06" y2="106.68" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DIN">
 <contactref element="DISPLAY" pad="4"/>
-<contactref element="U$1" pad="P$16"/>
-<wire x1="38.1" y1="24.13" x2="101.6" y2="106.68" width="0" layer="19" extent="1-1"/>
+<contactref element="U$1" pad="P$13"/>
+<wire x1="38.1" y1="31.75" x2="101.6" y2="106.68" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CLK">
 <contactref element="DISPLAY" pad="5"/>
-<contactref element="U$1" pad="P$17"/>
-<wire x1="38.1" y1="21.59" x2="104.14" y2="106.68" width="0" layer="19" extent="1-1"/>
+<contactref element="U$1" pad="P$11"/>
+<wire x1="38.1" y1="36.83" x2="104.14" y2="106.68" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BL">
 <contactref element="DISPLAY" pad="7"/>
-</signal>
-<signal name="N$6">
-<contactref element="U$1" pad="P$12"/>
+<contactref element="U$1" pad="P$10"/>
+<wire x1="38.1" y1="39.37" x2="109.22" y2="106.68" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+7.4V">
 <contactref element="X1" pad="1"/>
+</signal>
+<signal name="N$2">
+<contactref element="U$1" pad="P$12"/>
+</signal>
+<signal name="N$1">
+<contactref element="X2" pad="1"/>
+</signal>
+<signal name="N$3">
+<contactref element="X2" pad="2"/>
+</signal>
+<signal name="N$4">
+<contactref element="X3" pad="1"/>
+</signal>
+<signal name="N$5">
+<contactref element="X3" pad="2"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
