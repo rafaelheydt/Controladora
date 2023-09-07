@@ -152,6 +152,16 @@
 <pad name="10" x="7.62" y="-6.35" drill="1.32" rot="R270"/>
 <pad name="9" x="7.62" y="-8.89" drill="1.32" rot="R270"/>
 </package>
+<package name="LM2596">
+<wire x1="0" y1="0" x2="43" y2="0" width="0.127" layer="20"/>
+<wire x1="43" y1="0" x2="43" y2="21" width="0.127" layer="20"/>
+<wire x1="43" y1="21" x2="0" y2="21" width="0.127" layer="20"/>
+<wire x1="0" y1="21" x2="0" y2="0" width="0.127" layer="20"/>
+<pad name="P$1" x="1.7" y="19.3" drill="0.8" diameter="2.7" shape="square"/>
+<pad name="P$2" x="1.7" y="1.7" drill="0.8" diameter="2.7" shape="square"/>
+<pad name="P$3" x="41.3" y="19.3" drill="0.8" diameter="2.7" shape="square"/>
+<pad name="P$4" x="41.3" y="1.7" drill="0.8" diameter="2.7" shape="square"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DRV8833">
@@ -178,6 +188,18 @@
 <text x="-7.62" y="30.48" size="1.778" layer="94">DRV8833</text>
 <text x="-10.16" y="2.54" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
+<symbol name="LM2596_DC-DC">
+<pin name="IN+" x="-22.86" y="12.7" length="short"/>
+<pin name="IN-" x="-22.86" y="7.62" length="short"/>
+<pin name="OUT+" x="-2.54" y="12.7" length="short" rot="R180"/>
+<pin name="OUT-" x="-2.54" y="7.62" length="short" rot="R180"/>
+<wire x1="-20.32" y1="15.24" x2="-20.32" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="15.24" x2="-20.32" y2="15.24" width="0.254" layer="94"/>
+<text x="-20.32" y="2.54" size="1.778" layer="94">&gt;VALUE</text>
+<text x="-20.32" y="17.78" size="1.778" layer="94">LM2596</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="DRV8833">
@@ -203,6 +225,24 @@
 <connect gate="G$1" pin="NC@3" pad="15"/>
 <connect gate="G$1" pin="STBY" pad="12"/>
 <connect gate="G$1" pin="VM" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LM2596">
+<gates>
+<gate name="G$1" symbol="LM2596_DC-DC" x="50.8" y="33.02"/>
+</gates>
+<devices>
+<device name="" package="LM2596">
+<connects>
+<connect gate="G$1" pin="IN+" pad="P$1"/>
+<connect gate="G$1" pin="IN-" pad="P$2"/>
+<connect gate="G$1" pin="OUT+" pad="P$3"/>
+<connect gate="G$1" pin="OUT-" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
