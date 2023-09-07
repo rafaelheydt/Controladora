@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -689,6 +689,16 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <pad name="11" x="3.81" y="0" drill="1.32" rot="R270"/>
 <pad name="10" x="3.81" y="-2.54" drill="1.32" rot="R270"/>
 <pad name="9" x="3.81" y="-5.08" drill="1.32" rot="R270"/>
+</package>
+<package name="LM2596">
+<wire x1="0" y1="0" x2="43" y2="0" width="0.127" layer="20"/>
+<wire x1="43" y1="0" x2="43" y2="21" width="0.127" layer="20"/>
+<wire x1="43" y1="21" x2="0" y2="21" width="0.127" layer="20"/>
+<wire x1="0" y1="21" x2="0" y2="0" width="0.127" layer="20"/>
+<pad name="P$1" x="1.7" y="19.3" drill="0.8" diameter="2.7" shape="square"/>
+<pad name="P$2" x="1.7" y="1.7" drill="0.8" diameter="2.7" shape="square"/>
+<pad name="P$3" x="41.3" y="19.3" drill="0.8" diameter="2.7" shape="square"/>
+<pad name="P$4" x="41.3" y="1.7" drill="0.8" diameter="2.7" shape="square"/>
 </package>
 </packages>
 </library>
@@ -1899,7 +1909,7 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default">
+<designrules name="default *">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -1964,7 +1974,7 @@ design rules under a new name.</description>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
 <param name="mlMinStopFrame" value="4mil"/>
-<param name="mlMaxStopFrame" value="4mil"/>
+<param name="mlMaxStopFrame" value="8mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
 <param name="mlViaStopLimit" value="0mil"/>
@@ -2196,6 +2206,7 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="93" x="-50.8" y="-31.75" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-47.5996" y="-33.5534" size="1.27" layer="27" ratio="10"/>
 </element>
+<element name="U$3" library="DRV8833" package="LM2596" value="LM2596" x="-53.34" y="-57.15" smashed="yes"/>
 </elements>
 <signals>
 <signal name="+5V">
@@ -2238,8 +2249,12 @@ design rules under a new name.</description>
 <contactref element="R1" pad="2"/>
 <contactref element="R2" pad="2"/>
 <contactref element="R3" pad="2"/>
+<contactref element="X1" pad="1"/>
+<contactref element="U$2" pad="1"/>
 <wire x1="106.68" y1="106.68" x2="107.95" y2="124.46" width="0" layer="19" extent="1-1"/>
-<wire x1="-48.26" y1="-3.81" x2="106.68" y2="106.68" width="0" layer="19" extent="1-1"/>
+<wire x1="73.6854" y1="39.37" x2="106.68" y2="106.68" width="0" layer="19" extent="1-1"/>
+<wire x1="158.75" y1="36.83" x2="73.6854" y2="39.37" width="0" layer="19" extent="1-1"/>
+<wire x1="-48.26" y1="-3.81" x2="73.6854" y2="39.37" width="0" layer="19" extent="1-1"/>
 <wire x1="-48.26" y1="-7.62" x2="-48.26" y2="-3.81" width="0" layer="19" extent="1-1"/>
 <wire x1="-48.26" y1="-11.43" x2="-48.26" y2="-7.62" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -2302,9 +2317,6 @@ design rules under a new name.</description>
 <contactref element="DISPLAY" pad="7"/>
 <contactref element="U$1" pad="P$31"/>
 <wire x1="53.34" y1="36.83" x2="109.22" y2="106.68" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="+7.4V">
-<contactref element="X1" pad="1"/>
 </signal>
 <signal name="AIN2">
 <contactref element="U$2" pad="10"/>
