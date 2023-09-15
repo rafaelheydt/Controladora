@@ -1487,14 +1487,14 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <library name="DRV8833">
 <packages>
 <package name="LM2596">
-<wire x1="0" y1="0" x2="43" y2="0" width="0.127" layer="20"/>
-<wire x1="43" y1="0" x2="43" y2="21" width="0.127" layer="20"/>
-<wire x1="43" y1="21" x2="0" y2="21" width="0.127" layer="20"/>
-<wire x1="0" y1="21" x2="0" y2="0" width="0.127" layer="20"/>
 <pad name="P$1" x="1.7" y="19.3" drill="0.8" diameter="2.7" shape="square"/>
 <pad name="P$2" x="1.7" y="1.7" drill="0.8" diameter="2.7" shape="square"/>
 <pad name="P$3" x="41.3" y="19.3" drill="0.8" diameter="2.7" shape="square"/>
 <pad name="P$4" x="41.3" y="1.7" drill="0.8" diameter="2.7" shape="square"/>
+<wire x1="0" y1="21" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="43" y1="0" x2="43" y2="21" width="0.127" layer="21"/>
+<wire x1="0" y1="21" x2="43" y2="21" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="43" y2="0" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>

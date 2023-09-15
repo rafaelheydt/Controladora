@@ -6401,9 +6401,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <label x="-563.88" y="541.02" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="3.3V"/>
-<wire x1="-599.44" y1="614.68" x2="-594.36" y2="614.68" width="0.1524" layer="91"/>
-<label x="-594.36" y="614.68" size="1.016" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="+5V"/>
+<wire x1="-599.44" y1="619.76" x2="-594.36" y2="619.76" width="0.1524" layer="91"/>
+<label x="-594.36" y="619.76" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="EN" class="0">
